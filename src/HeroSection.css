@@ -1,36 +1,56 @@
-.hero-section {
+.hero-wrapper {
   display: flex;
   justify-content: center;
+  padding: 2rem 1rem;
+  background-color: transparent;
+}
+
+.hero-section {
+  width: 100%;
+  max-width: 990px;
+  height: 370px;
+  display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  height: 290px;
-  color: #E6DACE; 
+  color: #E6DACE;
+
   background-image: 
-    linear-gradient(to bottom, rgba(44, 44, 44, 0.8), rgba(138, 105, 77, 0.3)), 
-    url('banner.jpg');
+    linear-gradient(to bottom, rgba(29, 27, 27, 0.6), rgba(43, 39, 39, 0.3)), /* greyish overlay */
+    url('banner1.png');
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   text-align: center;
   padding: 2rem;
   box-sizing: border-box;
+  border-radius: 1rem;
+  overflow: hidden;
 }
 
-.hero-section h2 {
-  font-size: 3rem;
-  font-family: 'Georgia', serif;
-  margin-bottom: 0.5rem;
-  color: #F9F7F2; 
-  text-shadow: 
-    1px 1px 3px rgba(44, 44, 44, 0.8), 
-    -1px -1px 0 rgba(138, 105, 77, 0.3); 
-  letter-spacing: 0.05em;
-  line-height: 1.2;
+.hero-section h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: 'Playfair Display', serif;
+  color: #E6DACE;
+  margin: 0;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); 
+  letter-spacing: 0.5px;
+  text-align: center;
 }
 
-.hero-section h3 {
-  color: #2c2c2c; 
-  background-color: rgba(249, 247, 242, 0.85); 
-  padding: 0.75rem 1.5rem;
-  display: inline-block;
-  border-left: 3px solid #8a694d;
+@media (max-width: 768px) {
+  .hero-section {
+    height: 260px;
+    padding: 1.5rem;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    height: 220px;
+    font-size: 1.6rem;
+    padding: 1rem;
+  }
 }

@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+.introducere {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 900px;
+    margin: 1rem auto 0 auto; 
+    font-family: 'Playfair Display', serif;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.statistics {
+    flex: 1;
+    min-width: 240px;
+    max-width: 320px;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: linear-gradient(to bottom, #cbb19b 0%, #a5876e 100%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-titlu {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.logo-titlu img {
+    max-width: 45px;
+    height: auto;
+    filter: brightness(0) invert(1);
+}
+
+.numbers {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.clients, .activity {
+    text-align: center;
+    min-width: 90px;
+}
+
+.clients h2, .activity h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+}
+
+.clients h4, .activity div {
+    font-size: 0.8rem;
+}
+
+.descriere {
+    flex: 2;
+    background-color: #e6dace;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #3d3c3b;
+    flex-wrap: wrap;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+.descriere .details {
+    flex: 1;
+    min-width: 180px;
+}
+
+.descriere p {
+    text-align: left;
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
+}
+
+.descriere h2 {
+    margin-bottom: 0.4rem;
+    font-size: 1.2rem;
+}
+
+.descriere .image {
+    background-color: #d9cdc1;
+    border-radius: 0 1rem 1rem 0;
+    padding: 0.5rem;
+    margin-left: 1rem;
+    flex-shrink: 0;
+    max-width: 160px;
+    min-width: 130px;
+}
+
+.descriere .image img {
+    width: 100%;
+    border-radius: 0.75rem;
+}
+
+@media (max-width: 600px) {
+    .introducere {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .statistics {
+        width: 85%;
+        max-width: 320px;
+        margin-bottom: 1rem;
+    }
+
+    .descriere {
+        width: 95%;
+        flex-direction: row;
+        flex-wrap: nowrap; 
+        align-items: center; 
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .descriere .details {
+        flex: 1 1 auto; 
+        min-width: 0; 
+    }
+
+    .descriere .image {
+        flex: 0 0 120px; 
+        margin: 0; 
+        max-width: 120px;
+    }
+
+    .logo-titlu {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .numbers {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+}

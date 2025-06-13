@@ -2,9 +2,10 @@ import "./HeroSection.css";
 
 function HeroSection() {
   return (
-    <div className="hero-section">
-      <div><h2>Piccolino</h2></div>
-      <div><h3>Calitate</h3></div>
+    <div className="hero-wrapper">
+      <div className="hero-section">
+        <h1>Welcome</h1>
+      </div>
     </div>
   );
 }
